@@ -7,6 +7,5 @@ public class Main {
         li.printWelcome();
         sayles.printWelcome();
         beu.printWelcome();
-
     }
 }
