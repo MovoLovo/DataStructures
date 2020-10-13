@@ -15,6 +15,6 @@ public class Kindergartener extends Student{
     }
 
     public void printWelcome(){
-        System.out.println("Welcome to Kindergarten little " + this.favoriteAnimal);
+        System.out.println("Welcome to Kindergarten little " + this.favoriteAnimal + "!");
     }
 }

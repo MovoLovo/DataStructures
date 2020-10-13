@@ -15,6 +15,6 @@ public class GradStudent extends Student {
     }
 
     public void printWelcome(){
-        System.out.println("Welcome to Graduate School, " + super.getName());
+        System.out.println("Welcome to Graduate School " + super.getName() + "!");
     }
 }

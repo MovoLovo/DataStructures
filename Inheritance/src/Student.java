@@ -16,6 +16,6 @@ public class Student {
     }
 
     public void printWelcome(){
-        System.out.println("Welcome! " + this.getName());
+        System.out.println("Welcome " + this.getName() + "!");
     }
 }
