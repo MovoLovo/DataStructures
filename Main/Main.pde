@@ -2,7 +2,7 @@
 void setup() {
  colorMode(HSB); // Change color mode for easier random color generation
  background(33, 49, 77); // No longer Avon blue!
- stroke(255);            // Not even sure its White!
+ noStroke();            // Not even sure its White!
  size(700, 700);     // Square!
  fill(130, 36, 51); // I think this was supposed to be Avon red?!
   
