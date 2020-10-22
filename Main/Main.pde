@@ -8,7 +8,7 @@ void setup() {
   
   // set the recursion depth and start drawing triangles
   int depth = 10;
-  // Created a direction variable to make it clear what value it starts with 
+  // Created a direction variable to make it clear what value this variable starts with 
   int direction = 0;
   Sierpinski s = new Sierpinski(0,height, width/2, 0, width, height, depth, direction);
   s.display();
