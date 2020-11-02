@@ -6,6 +6,9 @@ void setup() {
   frameRate(10);
 }
 
+final float MIN_WIDTH = 120;
+final float DELTA_ROTATION = .005;
+
 // Global variable for tracking rotation
 float rotation = 0;
 
@@ -13,7 +16,7 @@ float rotation = 0;
 void draw(){
   
   // Rotate .005 radians
-  rotation += .005;
+  rotation += DELTA_ROTATION;
   
   // Move drawing origin to mid point of screen 
   translate(width/2, height/2);
@@ -102,5 +105,5 @@ void paint(float x1, float y1, float x2, float y2) {
 
 // Same shouldSplit function as before
 boolean shouldSplit(float wide) {
-  return wide > 120 && random(120, wide * 1.5) < wide;
+  return wide > MIN_WIDTH && random(MIN_WIDTH, wide * 1.5) < wide;
 }

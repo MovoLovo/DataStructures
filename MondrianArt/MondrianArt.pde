@@ -6,6 +6,8 @@ void setup(){
   mond(0, 0, width, height);
 }
 
+// Constant for the minimun size where you can split the rectangle
+final float MIN_WIDTH = 120;
 
 // This function recusively draws rectangles in the fashion of Mondrian Art
 // Obviously mond is short of mondrian
@@ -105,5 +107,5 @@ void paint(float x1, float y1, float x2, float y2){
 // Function that decides if some region should be split based on width of the region
 boolean shouldSplit(float wide){
   // Returns a bool based on the criteria given in the assignment
-  return wide > 120 && random(120, wide * 1.5) < wide;
+  return wide > MIN_WIDTH && random(MIN_WIDTH, wide * 1.5) < wide;
 }
