@@ -6,7 +6,11 @@ void setup() {
   frameRate(10);
 }
 
+// Constants;
+// Minimun size where you can split the rectangle
 final float MIN_WIDTH = 120;
+
+// Rotation rate
 final float DELTA_ROTATION = .005;
 
 // Global variable for tracking rotation
